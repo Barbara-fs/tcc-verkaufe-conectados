@@ -1,1 +1,2 @@
-# tcc-verkaufe-conectados
+# TCC--Projeto-
+CRM / Plataforma de Vendas
