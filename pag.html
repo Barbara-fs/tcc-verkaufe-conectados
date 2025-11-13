@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Verkaufe Conectados - Pagamento</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <p class="p-0 m-0">Verkaufe</p>
+                <p class="p-0 m-0">Conectados</p>
+            </div>
+        </header>
+
+        <div class="grid btn-voltar">
+            <a href="opcoes.html">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-circle"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                    />
+                </svg>
+            </a>
+        </div>
+
+        <div class="container">
+            <h2>Escolha sua forma de pagamento</h2>
+
+            <div class="pagamento-opcao">
+                <input type="radio" name="forma-pagamento" value="pix" />
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.GaS2gAJx8gmLx_0rJJU3jAHaHa?cb=12&pid=ImgDet&w=60&h=60&c=7&rs=1&o=7&rm=3"
+                    alt="Pix"
+                />
+                <div>
+                    <strong>Pix</strong><br />
+                    Pagamento instantâneo e sem taxas.
+                </div>
+            </div>
+
+            <div class="pagamento-opcao">
+                <input type="radio" name="forma-pagamento" value="cartao" />
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/196/196578.png"
+                    alt="Cartão de Crédito"
+                />
+                <div>
+                    <strong>Cartão de Crédito/Débito</strong>
+                    Aceitamos Visa, MasterCard, e mais
+                </div>
+
+                <button class="botão pagar"></button>
+            </div>
+
+            <div class="pagamento-opcao">
+                <input type="radio" name="forma-pagamento" value="boleto" />
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/633/633652.png"
+                    alt="Boleto"
+                />
+                <div>
+                    <strong>Boleto Bancário</strong><br />
+                    Prazo de até 3 dias úteis para compensação.
+                </div>
+            </div>
+
+            <button class="botao-usar">Confirmar Pagamento</button>
+        </div>
+    </body>
+</html>
