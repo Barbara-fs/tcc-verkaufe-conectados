@@ -1,192 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Vendas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Vendas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <body>
+        <header>
+            <div class="logo">
+                <p class="p-0 m-0">Verkaufe</p>
+                <p class="p-0 m-0">Conectados</p>
+            </div>
+        </header>
 
-<body>
-
-  <header>
-    <div class="logo">
-      <a href="opcoes.html">
-        <p class="p-0 m-0">Verkaufe</p>
-        <p class="p-0 m-0"> Conectados</p>
-      </a>
-    </div>
-  </header>
-
-  <div class="w-100">
-
-    <div class="row p-0 m-0">
-      <div class="col-12 p-3">
-        <h2> Input de Venda </h2>
-      </div>
-    </div>
-
-    <div class="row p-0 m-0">
-      <div class="col-3 p-3">
-        <input class="form-control" type="text" placeholder="Código do cliente">
-      </div>
-    </div>
-
-
-
-
-    <div class="row p-0 m-0">
-      <div class="col-8 p-3">
-        <input class="form-control" type="text" placeholder="Nome/Razao Social">
-      </div>
-      <div class="col-4 p-3">
-        <input class="form-control" type="text" placeholder="CNPJ/CPF">
-      </div>
-    </div>
-
-
-    <div class="row p-0 m-0">
-      <div class="col-2 p-01">
-        <input class="form-control" type="text" placeholder="Codigo do Produto">
-      </div>
-      <div class="col-4 p-01">
-        <input class="form-control" type="text" placeholder="Produto">
-      </div>
-
-      <div class="row p-0 m-0">
-        <div class="col-4 p-3">
-          <input class="form-control" type="text" placeholder="Quantidade">
+        <div class="grid btn-voltar">
+          <a href="opcoes.html">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-left-circle"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                />
+            </svg>
+            </a>
         </div>
 
-
-        <div class="col-4 p-3">
-          <input class="form-control" type="text" placeholder="Preço R$">
-
-
-
-        </div>
-
-        <div class="row p-0 m-0">
-          <div class="col-12 p-3">
-            <h2> Endereço de Entrega </h2>
-          </div>
-        </div>
-
-        <div class="row p-0 m-0">
-          <div class="col-2 p-01">
-            <input class="form-control" type="text" placeholder="CEP">
-          </div>
-
-          <div class="row p-0 m-0">
-            <div class="col-4 p-3">
-              <input class="form-control" type="text" placeholder="Endereço">
+        <div class="w-100">
+            <div class="row p-0 m-0">
+                <div class="col-12 p-3">
+                    <h2>Input de Venda</h2>
+                </div>
             </div>
 
+            <div class="row p-0 m-0">
+                <div class="col-3 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Código do cliente"
+                    />
+                </div>
+            </div>
 
             <div class="row p-0 m-0">
-              <div class="col-2 p-01">
-                <input class="form-control" type="text" placeholder="Número">
-              </div>
+                <div class="col-8 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Nome/Razao Social"
+                    />
+                </div>
+                <div class="col-4 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="CNPJ/CPF"
+                    />
+                </div>
+            </div>
 
-              <div class="row p-0 m-0">
-                <div class="col-2 p-3">
-                  <input class="form-control" type="text" placeholder="Complemento">
+            <div class="row p-0 m-0">
+                <div class="col-3 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Codigo do Produto"
+                    />
+                </div>
+                <div class="col-9 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Produto"
+                    />
+                </div>
+            </div>
 
-
+            <div class="row p-0 m-0">
+                <div class="col-4 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Quantidade"
+                    />
                 </div>
 
-                <div class="row p-0 m-0">
-                  <div class="col-3 p-3">
-                    <input class="form-control" type="text" placeholder="Bairro">
-                  </div>
+                <div class="col-4 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Preço R$"
+                    />
+                </div>
+            </div>
 
+            <div class="row p-0 m-0">
+                <div class="col-12 p-3">
+                    <h2>Endereço de Entrega</h2>
+                </div>
+            </div>
 
-                  <div class="col-3 p-3">
-                    <input class="form-control" type="text" placeholder="Cidade">
-                  </div>
+            <div class="row p-0 m-0">
+                <div class="col-3 p-3">
+                    <input class="form-control" type="text" placeholder="CEP" />
+                </div>
 
-                  <div class="row p-0 m-0">
+                <div class="col-9 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Endereço"
+                    />
+                </div>
+            </div>
 
-                    <div class="col-3 p-3">
-                      <input class="form-control" type="text" placeholder="Estado">
+            <div class="row p-0 m-0">
+                <div class="col-3 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Número"
+                    />
+                </div>
 
-                    </div>
+                <div class="col-3 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Complemento"
+                    />
+                </div>
 
-                    <div class="row p-0 m-0">
+                <div class="col-3 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Bairro"
+                    />
+                </div>
+            </div>
 
-                      <div class="col-2 p-2">
-                        <input class="form-control" type="text" placeholder="País">
+            <div class="row p-0 m-0">
+                <div class="col-3 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Cidade"
+                    />
+                </div>
 
-                      </div>
+                <div class="col-3 p-3">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Estado"
+                    />
+                </div>
 
+                <div class="col-2 p-2">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="País"
+                    />
+                </div>
+            </div>
 
+            <div class="row p-0 m-0">
+                <div class="col-12 p-3">
+                    <h2>Pagamentos</h2>
+                </div>
+            </div>
 
+            <div class="row p-0 m-0">
+                <div class="col-6 p-3">
+                    <select
+                        class="form-select"
+                        id="formaPagamento"
+                        name="formaPagamento"
+                        required
+                    >
+                        <option value="">Selecione</option>
+                        <option value="cartaoCredito">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="pix">PIX</option>
+                        <option value="dinheiro">Dinheiro</option>
+                    </select>
+                </div>
+            </div>
 
+            <div class="grid coluna-1">
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="btn btn-custom-save" onclick="irParaOpcoes()">
+                      Salvar
+                    </button>
+                    <button class="btn btn-custom-cancel" onclick="irParaOpcoes()">
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-                      <h2> Pagamentos </h2>
-                      <div class="row p-0 m-0">
-
-                        <div class="col-2 p-2">
-
-                          <div class="input-group">
-
-                          </div>
-
-
-                          <select id="formaPagamento" name="formaPagamento" required>
-
-
-                            <option value="">Selecione</option>
-                            <option value="cartaoCredito">Cartão de Crédito</option>
-                            <option value="boleto">Boleto</option>
-                            <option value="pix">PIX</option>
-                            <option value="dinheiro">Dinheiro</option>
-                          </select>
-                        </div>
-
-                        <h2>Evolução de vendas</h2>
-
-
-                        <div class="grafico-container">
-                          <canvas id="grafico-vendas"></canvas>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div class="row mb-5">
-                      <div class="col-12 d-flex justify-content-end gap-3">
-                        <button class="btn btn-lg btn-custom-save shadow-sm">
-                          Salvar
-                        
-                         
-                        </button>
-                        <button type="button" class="btn btn-lg btn-custom-cancel shadow-sm">
-                          Cancelar
-                        </button>
-                      </div>
-                    </div>
-
-
-                    </main>
-
-                    </form>
-
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                      crossorigin="anonymous"></script>
-
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</body>
-
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
 </html>
