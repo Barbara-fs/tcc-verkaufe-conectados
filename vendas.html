@@ -6,7 +6,8 @@
   <title>Vendas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
@@ -37,6 +38,9 @@
       </div>
     </div>
 
+
+
+
     <div class="row p-0 m-0">
       <div class="col-8 p-3">
         <input class="form-control" type="text" placeholder="Nome/Razao Social">
@@ -47,106 +51,142 @@
     </div>
 
 
-  </div>
+    <div class="row p-0 m-0">
+      <div class="col-2 p-01">
+        <input class="form-control" type="text" placeholder="Codigo do Produto">
+      </div>
+      <div class="col-4 p-01">
+        <input class="form-control" type="text" placeholder="Produto">
+      </div>
 
-    <div class="w-100">
-
-      <main>
-
-        <div label for="Nome/Razao Social">Nome/Razao Social</label><br>
-        
-          <br>
-          <label for="Código do produto">Código do produto</label><br>
-          <input type="text" id="Codigo do produto" name="Codigo do produto" required><br>
-
-          <label for=" Produto"> Produto</label><br>
-          <input type="text" id=" Produto" name=" Produto" required><br>
-
-          <label for=" Quantidade"> Quantidade</label><br>
-          <input type="text" id=" Quantidade" name=" Quantidade" required><br>
+      <div class="row p-0 m-0">
+        <div class="col-4 p-3">
+          <input class="form-control" type="text" placeholder="Quantidade">
+        </div>
 
 
-          <label for=" Preço"> Preço</label> <br>
-          <input type="text" id=" Preço" name=" Preço" required><br>
-
-          <br>
-
-          <div class="input-group">
-            <form action="Endereço de Entrega">
-          </div>
-
-          <body>
-            <h2> Endereço de Entrega </h2>
-          </body>
-          <br>
-
-
-          <input type="CEP" placeholder="CEP">
-
-          <input type="Endereço" placeholder="Endereço">
-
-          <input type="Número" placeholder="Número">
-          <input type="Complemento" placeholder="Complemento">
-          <input type="Bairro" placeholder="Bairro">
-
-          <input type="Cidade" placeholder="Cidade">
-          <input type="Estado" placeholder="Estado">
-          <input type="País" placeholder="País">
-
-
-
-
-
-
-
-          <br>
-
-
+        <div class="col-4 p-3">
+          <input class="form-control" type="text" placeholder="Preço R$">
 
 
 
         </div>
 
-        <body>
-          <br>
-          <h2> Pagamentos </h2>
-
-          <br>
-          <div class="input-group">
-
-
-            <label for="formaPagamento">Forma de Pagamento:</label>
-            <select id="formaPagamento" name="formaPagamento" required>
-              <option value="">Selecione</option>
-              <option value="cartaoCredito">Cartão de Crédito</option>
-              <option value="boleto">Boleto</option>
-              <option value="pix">PIX</option>
-              <option value="dinheiro">Dinheiro</option>
-            </select>
+        <div class="row p-0 m-0">
+          <div class="col-12 p-3">
+            <h2> Endereço de Entrega </h2>
           </div>
-          <div class="double-button">
-            <button class="btn">Salvar</button>
-            <button class="btn">Cancelar</button>
+        </div>
+
+        <div class="row p-0 m-0">
+          <div class="col-2 p-01">
+            <input class="form-control" type="text" placeholder="CEP">
           </div>
 
-          <br>
-
-          <h2>Evolução de vendas</h2>
-
-          <div class="grafico-container">
-            <canvas id="grafico-container"></canvas>
+          <div class="row p-0 m-0">
+            <div class="col-4 p-3">
+              <input class="form-control" type="text" placeholder="Endereço">
+            </div>
 
 
+            <div class="row p-0 m-0">
+              <div class="col-2 p-01">
+                <input class="form-control" type="text" placeholder="Número">
+              </div>
 
-          </div>
-    </div>
-    </main>
+              <div class="row p-0 m-0">
+                <div class="col-2 p-3">
+                  <input class="form-control" type="text" placeholder="Complemento">
 
-    </form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+                </div>
+
+                <div class="row p-0 m-0">
+                  <div class="col-3 p-3">
+                    <input class="form-control" type="text" placeholder="Bairro">
+                  </div>
+
+
+                  <div class="col-3 p-3">
+                    <input class="form-control" type="text" placeholder="Cidade">
+                  </div>
+
+                  <div class="row p-0 m-0">
+
+                    <div class="col-3 p-3">
+                      <input class="form-control" type="text" placeholder="Estado">
+
+                    </div>
+
+                    <div class="row p-0 m-0">
+
+                      <div class="col-2 p-2">
+                        <input class="form-control" type="text" placeholder="País">
+
+                      </div>
+
+
+
+
+
+
+
+
+
+                      <h2> Pagamentos </h2>
+                      <div class="row p-0 m-0">
+
+                        <div class="col-2 p-2">
+
+                          <div class="input-group">
+
+                          </div>
+
+
+                          <select id="formaPagamento" name="formaPagamento" required>
+
+
+                            <option value="">Selecione</option>
+                            <option value="cartaoCredito">Cartão de Crédito</option>
+                            <option value="boleto">Boleto</option>
+                            <option value="pix">PIX</option>
+                            <option value="dinheiro">Dinheiro</option>
+                          </select>
+                        </div>
+
+                        <h2>Evolução de vendas</h2>
+
+
+                        <div class="grafico-container">
+                          <canvas id="grafico-vendas"></canvas>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row mb-5">
+                      <div class="col-12 d-flex justify-content-end gap-3">
+                        <button class="btn btn-lg btn-custom-save shadow-sm">
+                          Salvar
+                        
+                         
+                        </button>
+                        <button type="button" class="btn btn-lg btn-custom-cancel shadow-sm">
+                          Cancelar
+                        </button>
+                      </div>
+                    </div>
+
+
+                    </main>
+
+                    </form>
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                      crossorigin="anonymous"></script>
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>

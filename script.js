@@ -62,4 +62,7 @@ const Cadastro = document.getElementById('Cadastro.HTML');
                 };
                 reader.readAsText(file);
             }
-        });
+
+   
+    
+});

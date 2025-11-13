@@ -302,20 +302,17 @@ header {
   background-color: #239a55;
 }
 
-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #521e3d;
-}
 
-footer {
-  text-align: center;
-  margin-top: 50px;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #521e3d;
+   footer {
+            background-color: #521e3d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+            font-size: 14px;
+                display: block;
+    unicode-bidi: isolate;
+
 }
 
 h1 {
@@ -422,3 +419,31 @@ h1 {
       display: flex;
       justify-content: center;
     }
+
+
+.btn-custom-save {
+    background-color: #5b2149; 
+    border-color: #5b2149;
+    color: white;
+   
+    border-radius: 0 !important; 
+}
+
+.btn-custom-save:hover {
+    background-color: #4a1c3d;
+    border-color: #4a1c3d;
+}
+
+
+.btn-custom-cancel {
+    background-color: #5b2149; 
+    border-color: #5b2149;     
+    color: white;
+ 
+    border-radius: 0 !important; 
+}
+
+.btn-custom-cancel:hover {
+    background-color: #4a1c3d;
+    border-color: #4a1c3d;
+}

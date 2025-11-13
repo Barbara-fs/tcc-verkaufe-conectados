@@ -1,78 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Status do Pedido</title>
-    <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <style>
 
 
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #521e3d;
+            color: white;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            margin-top: 40px;
+            color: #521e3d;
+        }
+
+        .status-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .status-step {
+            background: white;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            width: 150px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .status-step.active {
+            border-color: #521e3d;
+            background: #f3e6f0;
+        }
+
+        .status-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .status-step:hover {
+            transform: scale(1.05);
+        }
+
+        .status-button {
+            display: inline-block;
+            background-color: #521e3d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 14px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .status-button:hover {
+            background-color: #6d2c58;
+        }
+
+        footer {
+            background-color: #521e3d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
-<body class="pagina-Opções">
-    <header>
-        <div class="logo">
+<body>
+
+
+   <div class="logo">
             <a href="opcoes.html">
                 Verkaufe <br> Conectados
             </a>
         </div>
 
+
+
+
+
+    <main>
+        <h1>Status da Venda</h1>
+
+        <div class="status-container">
+            <div class="status-step active">
+                <div class="status-icon">💳</div>
+                <div>Pagamento Pendente</div>
+                <button class="status-button" onclick="alert('Pagamento ainda pendente!')">Ver Detalhes</button>
+            </div>
+
+            <div class="status-step active">
+                <div class="status-icon">✅</div>
+                <div>Pagamento Aprovado</div>
+                <button class="status-button" onclick="alert('Pagamento confirmado!')">Ver Detalhes</button>
+            </div>
+
+            <div class="status-step">
+                <div class="status-icon">📦</div>
+                <div>Pedido Enviado</div>
+                <button class="status-button" onclick="alert('Seu pedido foi enviado!')">Ver Detalhes</button>
+            </div>
+
+            <div class="status-step">
+                <div class="status-icon">🚚</div>
+                <div>Pedido Entregue</div>
+                <button class="status-button" onclick="alert('Seu pedido foi entregue!')">Ver Detalhes</button>
+            </div>
         </div>
+    </main>
 
-        <main>
-
-
-
-
-
-            </head>
-
-            <body>
-                <main>
-
-                    <h1>Status do Pedido</h1>
-
-
-
-
-                    <div class="status-container">
-                        <div class="status-step active">
-                            <div class="status-icon">💳</div>
-                            <div>Pagamento Pendente</div>
-                        </div>
-                        <div class="status-step active">
-                            <div class="status-icon">✅</div>
-                            <div>Pagamento Aprovado</div>
-                        </div>
-                        <div class="status-step">
-                            <div class="status-icon">📦</div>
-                            <div>Pedido Enviado</div>
-                        </div>
-                        <div class="status-step">
-                            <div class="status-icon">🚚</div>
-                            <div>Pedido Entregue</div>
-                        </div>
-
-
-
-                    </div>
-                    </div>
-                </main>
-
-
-            </body>
-
+    <footer>
+        &copy; 2025 Verkaufe Conectados - Todos os direitos reservados.
+    </footer>
+</body>
 </html>
-
-
-
-
-
-
-
-<footer>
-    &copy; 2025 Verkaufe Conectados - Todos os direitos reservados.
-</footer>
